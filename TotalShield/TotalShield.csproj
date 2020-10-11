@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F846E12-DBA8-47AE-BAAA-64321813F9D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TotalShield</RootNamespace>
+    <AssemblyName>TotalShield</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>TotalShieldSetup\Resources\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AppIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.ProtectedData.4.7.0\lib\net461\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VirusTotalNet, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\VirusTotalNet.2.0.0\lib\netstandard2.0\VirusTotalNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account.Designer.cs">
+      <DependentUpon>Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV_List.cs" />
+    <Compile Include="AV_Reports.cs" />
+    <Compile Include="Com_Interface.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keys.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preferences.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxExtensions.cs" />
+    <Compile Include="RunSafeNotify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunSafeNotify.Designer.cs">
+      <DependentUpon>RunSafeNotify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scan.Designer.cs">
+      <DependentUpon>Scan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings_Form.Designer.cs">
+      <DependentUpon>Settings_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalMessage.Designer.cs">
+      <DependentUpon>TotalMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VT_API.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account.resx">
+      <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RunSafeNotify.resx">
+      <DependentUpon>RunSafeNotify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scan.resx">
+      <DependentUpon>Scan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings_Form.resx">
+      <DependentUpon>Settings_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalMessage.resx">
+      <DependentUpon>TotalMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\Interface\tray_fix.gif" />
+    <EmbeddedResource Include="Settings\Preferences.xml" />
+    <None Include="Media\Interface\ok2.gif" />
+    <None Include="Media\Interface\nok2.gif" />
+    <None Include="Media\Interface\theme_background.png" />
+    <Content Include="AppIcon.ico" />
+    <EmbeddedResource Include="History\Reports.xml" />
+    <None Include="Media\Interface\clock.gif" />
+    <None Include="Media\Interface\waiting.gif" />
+    <None Include="Media\Interface\loading.gif" />
+    <EmbeddedResource Include="Settings\Keys.xml" />
+    <None Include="Media\Interface\AppIcon.ico" />
+    <None Include="Media\Interface\background_panel.png" />
+    <None Include="Media\Interface\Close.png" />
+    <None Include="Media\Interface\background_Form.jpg" />
+    <None Include="Media\Interface\Home_AV_GIFS.gif" />
+    <None Include="Media\Interface\directory_select.png" />
+    <None Include="Media\Interface\AVLogos\avast_logo.gif" />
+    <None Include="Media\Interface\AVLogos\avg_logo.gif" />
+    <None Include="Media\Interface\AVLogos\avira_logo.gif" />
+    <None Include="Media\Interface\AVLogos\bitdefender_logo.gif" />
+    <None Include="Media\Interface\AVLogos\microsoft_logo.gif" />
+    <None Include="Media\Interface\AVLogos\drweb_logo.gif" />
+    <None Include="Media\Interface\AVLogos\eset_logo.gif" />
+    <None Include="Media\Interface\AVLogos\kasp_logo.gif" />
+    <None Include="Media\Interface\AVLogos\malwarebytes_logo.gif" />
+    <None Include="Media\Interface\AVLogos\mcafee_logo.gif" />
+    <Content Include="Media\Interface\Icons\0.png" />
+    <Content Include="Media\Interface\Icons\1.png" />
+    <Content Include="Media\Interface\Icons\2.png" />
+    <Content Include="Media\Interface\Icons\3.png" />
+    <Content Include="Media\Interface\Icons\4.png" />
+    <Content Include="Media\Interface\Icons\5.png" />
+    <Content Include="Media\Interface\Icons\6.png" />
+    <Content Include="Media\Interface\Icons\7.png" />
+    <Content Include="Media\Interface\Icons\8.png" />
+    <Content Include="Media\Interface\Icons\9.png" />
+    <Content Include="Media\Interface\Icons\Alarme.png" />
+    <Content Include="Media\Interface\Icons\Ampersand.png" />
+    <Content Include="Media\Interface\Icons\Application.png" />
+    <Content Include="Media\Interface\Icons\Applications.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 Down.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 DownLeft.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 DownRight.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 Left.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 Right.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 Up.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 UpLeft.png" />
+    <Content Include="Media\Interface\Icons\Arrow1 UpRight.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 Down.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 DownLeft.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 DownRight.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 Left.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 Right.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 Up.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 UpLeft.png" />
+    <Content Include="Media\Interface\Icons\Arrow2 UpRight.png" />
+    <Content Include="Media\Interface\Icons\Arrow3 Down.png" />
+    <Content Include="Media\Interface\Icons\Arrow3 Left.png" />
+    <Content Include="Media\Interface\Icons\Arrow3 Right.png" />
+    <Content Include="Media\Interface\Icons\Arrow3 Up.png" />
+    <Content Include="Media\Interface\Icons\Attach.png" />
+    <Content Include="Media\Interface\Icons\Audio Message.png" />
+    <Content Include="Media\Interface\Icons\Back Top.png" />
+    <Content Include="Media\Interface\Icons\Back.png" />
+    <Content Include="Media\Interface\Icons\Bubble 1.png" />
+    <Content Include="Media\Interface\Icons\Bubble 3.png" />
+    <Content Include="Media\Interface\Icons\Burn.png" />
+    <Content Include="Media\Interface\Icons\Calc.png" />
+    <Content Include="Media\Interface\Icons\Calendar.png" />
+    <Content Include="Media\Interface\Icons\Cancel.png" />
+    <Content Include="Media\Interface\Icons\Car.png" />
+    <Content Include="Media\Interface\Icons\Card1.png" />
+    <Content Include="Media\Interface\Icons\Card2.png" />
+    <Content Include="Media\Interface\Icons\Card3.png" />
+    <Content Include="Media\Interface\Icons\Card4.png" />
+    <Content Include="Media\Interface\Icons\Cart.png" />
+    <Content Include="Media\Interface\Icons\Cart2.png" />
+    <Content Include="Media\Interface\Icons\Cd.png" />
+    <Content Include="Media\Interface\Icons\Clipboard Copy.png" />
+    <Content Include="Media\Interface\Icons\Clipboard Cut.png" />
+    <Content Include="Media\Interface\Icons\Clipboard Paste.png" />
+    <Content Include="Media\Interface\Icons\Clock.png" />
+    <Content Include="Media\Interface\Icons\Computer.png" />
+    <Content Include="Media\Interface\Icons\Contact.png" />
+    <Content Include="Media\Interface\Icons\Copyright.png" />
+    <Content Include="Media\Interface\Icons\Cube.png" />
+    <Content Include="Media\Interface\Icons\Currency Dollar.png" />
+    <Content Include="Media\Interface\Icons\Currency Euro.png" />
+    <Content Include="Media\Interface\Icons\Currency Pound.png" />
+    <Content Include="Media\Interface\Icons\Database.png" />
+    <Content Include="Media\Interface\Icons\Direction Diag1.png" />
+    <Content Include="Media\Interface\Icons\Direction Diag2.png" />
+    <Content Include="Media\Interface\Icons\Direction Horz.png" />
+    <Content Include="Media\Interface\Icons\Direction Vert.png" />
+    <Content Include="Media\Interface\Icons\Directions.png" />
+    <Content Include="Media\Interface\Icons\Discuss.png" />
+    <Content Include="Media\Interface\Icons\Document New.png" />
+    <Content Include="Media\Interface\Icons\Document.png" />
+    <Content Include="Media\Interface\Icons\Document2.png" />
+    <Content Include="Media\Interface\Icons\Dots Down.png" />
+    <Content Include="Media\Interface\Icons\Dots Up.png" />
+    <Content Include="Media\Interface\Icons\Dots.png" />
+    <Content Include="Media\Interface\Icons\Download.png" />
+    <Content Include="Media\Interface\Icons\Email.png" />
+    <Content Include="Media\Interface\Icons\Exclamation.png" />
+    <Content Include="Media\Interface\Icons\Fbook.png" />
+    <Content Include="Media\Interface\Icons\Flag.png" />
+    <Content Include="Media\Interface\Icons\Folder.png" />
+    <Content Include="Media\Interface\Icons\Folder2.png" />
+    <Content Include="Media\Interface\Icons\Folder3.png" />
+    <Content Include="Media\Interface\Icons\Footprint.png" />
+    <Content Include="Media\Interface\Icons\Forbidden.png" />
+    <Content Include="Media\Interface\Icons\Full Screen.png" />
+    <Content Include="Media\Interface\Icons\Full Size.png" />
+    <Content Include="Media\Interface\Icons\Game.png" />
+    <Content Include="Media\Interface\Icons\Gear.png" />
+    <Content Include="Media\Interface\Icons\Globe.png" />
+    <Content Include="Media\Interface\Icons\Go In.png" />
+    <Content Include="Media\Interface\Icons\Go Out.png" />
+    <Content Include="Media\Interface\Icons\Graph.png" />
+    <Content Include="Media\Interface\Icons\Hand.png" />
+    <Content Include="Media\Interface\Icons\Hdd Network.png" />
+    <Content Include="Media\Interface\Icons\Hdd.png" />
+    <Content Include="Media\Interface\Icons\Health.png" />
+    <Content Include="Media\Interface\Icons\Heart.png" />
+    <Content Include="Media\Interface\Icons\Home.png" />
+    <Content Include="Media\Interface\Icons\Home2.png" />
+    <Content Include="Media\Interface\Icons\Info.png" />
+    <Content Include="Media\Interface\Icons\Info2.png" />
+    <Content Include="Media\Interface\Icons\Ipod.png" />
+    <Content Include="Media\Interface\Icons\Key.png" />
+    <Content Include="Media\Interface\Icons\Light.png" />
+    <Content Include="Media\Interface\Icons\Link.png" />
+    <Content Include="Media\Interface\Icons\Lock Open.png" />
+    <Content Include="Media\Interface\Icons\Lock.png" />
+    <Content Include="Media\Interface\Icons\Loop.png" />
+    <Content Include="Media\Interface\Icons\Luggage.png" />
+    <Content Include="Media\Interface\Icons\Mail.png" />
+    <Content Include="Media\Interface\Icons\Man.png" />
+    <Content Include="Media\Interface\Icons\Microphone.png" />
+    <Content Include="Media\Interface\Icons\Minus.png" />
+    <Content Include="Media\Interface\Icons\Mobile.png" />
+    <Content Include="Media\Interface\Icons\Mouse.png" />
+    <Content Include="Media\Interface\Icons\Movie.png" />
+    <Content Include="Media\Interface\Icons\Music.png" />
+    <Content Include="Media\Interface\Icons\Music2.png" />
+    <Content Include="Media\Interface\Icons\Nuke.png" />
+    <Content Include="Media\Interface\Icons\Ok.png" />
+    <Content Include="Media\Interface\Icons\Paragraph.png" />
+    <Content Include="Media\Interface\Icons\Percent.png" />
+    <Content Include="Media\Interface\Icons\Phone.png" />
+    <Content Include="Media\Interface\Icons\Photo.png" />
+    <Content Include="Media\Interface\Icons\Picture.png" />
+    <Content Include="Media\Interface\Icons\Player Eject.png" />
+    <Content Include="Media\Interface\Icons\Player FastFwd.png" />
+    <Content Include="Media\Interface\Icons\Player FastRev.png" />
+    <Content Include="Media\Interface\Icons\Player Next.png" />
+    <Content Include="Media\Interface\Icons\Player Pause.png" />
+    <Content Include="Media\Interface\Icons\Player Play.png" />
+    <Content Include="Media\Interface\Icons\Player Previous.png" />
+    <Content Include="Media\Interface\Icons\Player Record.png" />
+    <Content Include="Media\Interface\Icons\Player Stop.png" />
+    <Content Include="Media\Interface\Icons\Plus.png" />
+    <Content Include="Media\Interface\Icons\Podcast.png" />
+    <Content Include="Media\Interface\Icons\Pointer.png" />
+    <Content Include="Media\Interface\Icons\Poll.png" />
+    <Content Include="Media\Interface\Icons\Printer.png" />
+    <Content Include="Media\Interface\Icons\Puzzle.png" />
+    <Content Include="Media\Interface\Icons\Question.png" />
+    <Content Include="Media\Interface\Icons\Reduced Size.png" />
+    <Content Include="Media\Interface\Icons\Refresh.png" />
+    <None Include="Media\Interface\Icons\report.ico" />
+    <Content Include="Media\Interface\Icons\Rss 1.png" />
+    <Content Include="Media\Interface\Icons\Rss 2.png" />
+    <Content Include="Media\Interface\Icons\Save.png" />
+    <Content Include="Media\Interface\Icons\Screen.png" />
+    <Content Include="Media\Interface\Icons\Search.png" />
+    <None Include="Media\Interface\Icons\search_black_background.png" />
+    <Content Include="Media\Interface\Icons\Security.png" />
+    <Content Include="Media\Interface\Icons\Sitemap.png" />
+    <Content Include="Media\Interface\Icons\Size Diag1.png" />
+    <Content Include="Media\Interface\Icons\Size Diag2.png" />
+    <Content Include="Media\Interface\Icons\Size Horz.png" />
+    <Content Include="Media\Interface\Icons\Size Vert.png" />
+    <Content Include="Media\Interface\Icons\Sleep.png" />
+    <Content Include="Media\Interface\Icons\Smiley1.png" />
+    <Content Include="Media\Interface\Icons\Smiley2.png" />
+    <Content Include="Media\Interface\Icons\Smiley3.png" />
+    <Content Include="Media\Interface\Icons\Sound Minus.png" />
+    <Content Include="Media\Interface\Icons\Sound Off.png" />
+    <Content Include="Media\Interface\Icons\Sound On.png" />
+    <Content Include="Media\Interface\Icons\Sound Plus.png" />
+    <Content Include="Media\Interface\Icons\Standby.png" />
+    <Content Include="Media\Interface\Icons\Star.png" />
+    <Content Include="Media\Interface\Icons\Start.png" />
+    <Content Include="Media\Interface\Icons\Stats 3.png" />
+    <Content Include="Media\Interface\Icons\Stats.png" />
+    <Content Include="Media\Interface\Icons\Stats2.png" />
+    <Content Include="Media\Interface\Icons\Table.png" />
+    <Content Include="Media\Interface\Icons\Tag.png" />
+    <Content Include="Media\Interface\Icons\Tape.png" />
+    <Content Include="Media\Interface\Icons\Target.png" />
+    <Content Include="Media\Interface\Icons\Text Large.png" />
+    <Content Include="Media\Interface\Icons\Text Meduim.png" />
+    <Content Include="Media\Interface\Icons\Text Minus.png" />
+    <Content Include="Media\Interface\Icons\Text Plus.png" />
+    <Content Include="Media\Interface\Icons\Text Small.png" />
+    <Content Include="Media\Interface\Icons\Thumb Down.png" />
+    <Content Include="Media\Interface\Icons\Thumb Up.png" />
+    <Content Include="Media\Interface\Icons\Tool.png" />
+    <Content Include="Media\Interface\Icons\Tool2.png" />
+    <Content Include="Media\Interface\Icons\Trackback.png" />
+    <Content Include="Media\Interface\Icons\Trash.png" />
+    <Content Include="Media\Interface\Icons\Travel.png" />
+    <Content Include="Media\Interface\Icons\Tree.png" />
+    <Content Include="Media\Interface\Icons\Tv.png" />
+    <Content Include="Media\Interface\Icons\User.png" />
+    <Content Include="Media\Interface\Icons\Video.png" />
+    <Content Include="Media\Interface\Icons\Wait.png" />
+    <Content Include="Media\Interface\Icons\Warning.png" />
+    <Content Include="Media\Interface\Icons\Weather Cloud.png" />
+    <Content Include="Media\Interface\Icons\Weather Could Sun.png" />
+    <Content Include="Media\Interface\Icons\Weather Rain.png" />
+    <Content Include="Media\Interface\Icons\Weather Snow.png" />
+    <Content Include="Media\Interface\Icons\Weather Sun.png" />
+    <Content Include="Media\Interface\Icons\Wizard.png" />
+    <Content Include="Media\Interface\Icons\Woman.png" />
+    <Content Include="Media\Interface\Icons\Wordpress.png" />
+    <Content Include="Media\Interface\Icons\Write.png" />
+    <Content Include="Media\Interface\Icons\Write2.png" />
+    <Content Include="Media\Interface\Icons\Write3.png" />
+    <Content Include="Media\Interface\Icons\Zoom In.png" />
+    <Content Include="Media\Interface\Icons\Zoom Out.png" />
+    <None Include="Media\Interface\LogoApp.png" />
+    <None Include="Media\Interface\menu_background.png" />
+    <None Include="Media\Interface\menu_image.jpg" />
+    <None Include="Media\Interface\Minimize.png" />
+    <None Include="Media\Interface\Maximize.png" />
+    <None Include="Media\Interface\upload_end.gif" />
+    <None Include="Media\Interface\upload_begin.gif" />
+    <None Include="Media\Interface\infinity.gif" />
+    <None Include="Media\Interface\nok.gif" />
+    <None Include="Media\Interface\ok.gif" />
+    <None Include="Media\Interface\ok1.gif" />
+    <None Include="Media\Interface\nok1.gif" />
+    <None Include="Media\Interface\tutorial.gif" />
+    <None Include="Media\Interface\on.png" />
+    <None Include="Media\Interface\off.png" />
+    <EmbeddedResource Include="Settings\AV_List.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

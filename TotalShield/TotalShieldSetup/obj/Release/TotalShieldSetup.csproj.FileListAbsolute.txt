@@ -1,0 +1,11 @@
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\bin\Release\TotalShieldSetup.exe.config
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\bin\Release\TotalShieldSetup.exe
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.csprojAssemblyReference.cache
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\Interop.IWshRuntimeLibrary.dll
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.csproj.ResolveComReference.cache
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.SetupForm.resources
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.Properties.Resources.resources
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.TotalMessage.resources
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.csproj.GenerateResource.cache
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.exe
+C:\Users\Sirius\Desktop\TotalShield\TotalShieldSetup\obj\Release\TotalShieldSetup.csproj.CoreCompileInputs.cache

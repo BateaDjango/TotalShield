@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AVList>
+  <av>
+    <name>Avast</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>AVG</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>Avira</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>BitDefender</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>DrWeb</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>ESET-NOD32</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>Kaspersky</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>Malwarebytes</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>McAfee</name>
+    <enabled>true</enabled>
+  </av>
+  <av>
+    <name>Microsoft</name>
+    <enabled>true</enabled>
+  </av>
+</AVList>

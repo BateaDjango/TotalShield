@@ -12,3 +12,8 @@ Once the key is set, in the scan menu the user can initiate a scan choosing eith
 ![](Images/Scan.png)
 
 Once the file are selected, the user will be provided dinamycally with information regarding his scan status.
+![](Images/Scanning.png)
+
+The user also has the posibility to view his previous scans in the History menu. 
+![](Images/History.png)
+By clicking the magnifier icon the user will see a short information based on each antivirus engine scan result.

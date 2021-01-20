@@ -26,4 +26,5 @@ There is also a Settings menu where the user can select the antivirus engines us
 The "Explorer Easy Launch" function will display 2 options in the context menu: "RunSafe (TotalShield)" and "Scan with TotalShield".
 ![](Images/ContextMenu.png)
 The Scan with TotalShield will run a regular scan, while "RunSafe (TotalShield)" function will initiate a scan in the background and if the file is Clean it will run immediatly, but if it is not it will not run and the user will get an notification in the lower right corner.
+
 ![](Images/RunSafe.png)
